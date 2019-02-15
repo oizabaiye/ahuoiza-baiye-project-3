@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>How will you go viral this year?</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,800|Source+Sans+Pro:400,600" rel="stylesheet">
+	<link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- 	Kebab case required -->
+	<header>
+		<div class="wrapper">
+			<h1>Which Viral Meme Are You?</h1>
+			<h3>Everyone loves a good internet meme. This short and totally scientific quiz will tell you which viral internet meme suits your personality.</h3>
+		</div>
+	</header>
+	
+	<main>
+	<section class="questions">
+		<div class="wrapper">
+			<form action="">
+				<fieldset class="optimist">
+					<p>Would you consider yourself an optimist?</p>
+					<label for="optimist-yes">Oh yes!</label>
+					<input type="radio" name="optimist" id="optimist-yes" value="true" required>
+					<label for="optimist-no">Not really</label>
+					<input type="radio" name="optimist" id="optimist-no" value="false">
+					<!-- label must match id -->
+					<!-- name should be same for different options for the same question -->
+				</fieldset>
+
+				<fieldset class="outdoorsy">
+					<p>Do you enjoy outdoor activities like hiking or marathon running or skiing?</p>
+					<label for="outdoorsy-yes">Oh yes!</label>
+					<input type="radio" name="outdoorsy" id="outdoorsy-yes" value="true" required>
+					<label for="outdoorsy-no">Not really</label>
+					<input type="radio" name="outdoorsy" id="outdoorsy-no" value="false">
+				</fieldset>
+
+				<fieldset class="dramatic">
+					<p>Are you a drama queen? Is your middle name in fact "Drama"?</p>
+					<label for="dramatic-yes">Oh yes!</label>
+					<input type="radio" name="dramatic" id="dramatic-yes" value="true">
+					<label for="dramatic-no">Not really</label>
+					<input type="radio" name="dramatic" id="dramatic-no" value="false">
+		<!-- put submit button in the last question -->
+					<div class="submit">
+						<input type="submit" value="Click for Answer!">
+					</div>
+				</fieldset>
+			</form>	
+		</div>
+	</section>
+	
+	<section class="results">
+		<div class="wrapper">
+			<div class="double-rainbow">
+				<h2>You are Double Rainbow Person</h2>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/MX0D4oZwCsA" frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p>The video of you crying at the sight of a natural phenomenom was transformed into a viral remix by the Gregory Brothers. Everyone loves your enthusiasm for the outdoors.</p>
+			</div>
+		
+			<div class="snow-fail">
+				<h2>You are Snow Removal Guy</h2>
+				<p>You're a totally normal person. You're just a bit clumsy in new circumstances. Don't be afraid of the shovel.</p>
+				<!-- video here -->
+			</div>
+
+			<div class="leave-britney">
+				<h2>You are Chris Crocker, aka Leave Britney Alone!</h2>
+				<p>Like the subject of this mesmerizing video, you have A LOT of feelings. Maybe a little pent up resentment. Take it easy, okay?</p>
+				<!-- video here -->
+			</div>
+		</div>
+
+		<!-- if you want to allow them to retake the quiz, add an anchor take that reloads the page -->
+	</section>
+	</main>
+
+	<footer>
+
+	</footer>
+
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+
+	<script src="script.js"></script>
+</body>
+</html>

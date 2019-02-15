@@ -1,0 +1,49 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    background: $main-color;
+    font: $text-color;
+    font-size: 1.5rem;
+    font-family: $body-font;  
+    line-height: 1.6;
+}
+
+header {
+    height: 100vh;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1, h3 {
+    font-family: $header-font; 
+}
+
+h1 {
+    font-family: 4rem;
+}
+
+h3 {
+    font-family: 2.5rem;
+}
+
+fieldset label {
+    font-size: 1.2rem;
+}
+
+.submit {
+    margin-top: 50px;
+
+    input {
+        border: none;
+        background: $accent-two;
+        padding: 20px;
+        border-radius: 2%;
+    }
+}
+
+//for buttons, use 2 accent colors, one for hover state
