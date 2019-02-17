@@ -136,27 +136,70 @@ html {
   font-size: 125%; }
 
 body {
-  background: #FDFFFC;
-  font: #011627;
-  font-size: 1.5rem;
+  background: #E4572E;
+  color: #FDFFFC;
+  font-size: 1.2rem;
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.6; }
 
-header {
-  height: 100vh; }
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center; }
+
+header h1, header h3 {
+  border: 1px solid orangered; }
+
+/* 
+-think of warm colours vs cool
+- bright & darker background
+-white text
+form - change color to orange
+-make sure contrast is good for accessibility
+- can add a harsh shadow
+*/
+section {
+  border: 1px solid orangered; }
 
 .wrapper {
   width: 960px;
   margin: 0 auto; }
 
-h1, h3 {
-  font-family: "Alegreya", serif; }
-
 h1 {
-  font-family: 4rem; }
+  font-family: "Alegreya", serif;
+  line-height: 1.15;
+  color: #FDFFFC;
+  font-size: 6rem; }
 
-h3 {
-  font-family: 2.5rem; }
+.questions .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+section.results {
+  background: #FC4C69; }
+
+.show {
+  display: block; }
+
+form {
+  background: #FDFFFC;
+  color: #011627;
+  width: 60vw; }
 
 fieldset label {
   font-size: 1.2rem; }
@@ -165,6 +208,6 @@ fieldset label {
   margin-top: 50px; }
   .submit input {
     border: none;
-    background: #FC4C69;
+    background: #011627;
     padding: 20px;
     border-radius: 2%; }

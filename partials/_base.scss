@@ -3,47 +3,75 @@ html {
 }
 
 body {
-    background: $main-color;
-    font: $text-color;
-    font-size: 1.5rem;
+    background: #E4572E;
+    color: $text-color;
+    font-size: 1.2rem;
     font-family: $body-font;  
     line-height: 1.6;
 }
 
 header {
-    height: 100vh;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1, h3 {
+        border: 1px solid orangered;
+    }
+
+}
+
+/* 
+-think of warm colours vs cool
+- bright & darker background
+-white text
+form - change color to orange
+-make sure contrast is good for accessibility
+- can add a harsh shadow
+*/
+
+section {
+    border: 1px solid orangered;
 }
 
 .wrapper {
     width: 960px;
     margin: 0 auto;
-}
 
-h1, h3 {
-    font-family: $header-font; 
 }
 
 h1 {
-    font-family: 4rem;
+    font-family: $header-font; 
+    line-height: 1.15;
+    color: $text-color;
+    font-size: 6rem;
 }
 
-h3 {
-    font-family: 2.5rem;
+// h3 {
+//     font-family: 2.5rem;
+// }
+
+.questions .wrapper {
+    display: flex;
+    justify-content: center;
 }
 
-fieldset label {
-    font-size: 1.2rem;
+section.results {
+    background: $accent-one;
 }
 
-.submit {
-    margin-top: 50px;
 
-    input {
-        border: none;
-        background: $accent-two;
-        padding: 20px;
-        border-radius: 2%;
-    }
+
+// .hidden {
+//     display: none;
+// }
+
+.show {
+    display: block;
 }
 
 //for buttons, use 2 accent colors, one for hover state
