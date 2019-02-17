@@ -132,17 +132,24 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* 
+font-family: 
+font-family: 'Amatic SC', cursive;
+font-family: 'B612', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+
+ */
 html {
   font-size: 125%; }
 
 body {
   background: #E4572E;
   color: #FDFFFC;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.6; }
 
-header .wrapper {
+.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,10 +163,8 @@ header .wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  text-align: center; }
-
-header h1, header h3 {
-  border: 1px solid orangered; }
+  width: 60vw;
+  margin: 0 auto; }
 
 /* 
 -think of warm colours vs cool
@@ -170,28 +175,44 @@ form - change color to orange
 - can add a harsh shadow
 */
 section {
-  border: 1px solid orangered; }
+  border: 1px solid black; }
 
-.wrapper {
-  width: 960px;
-  margin: 0 auto; }
+header {
+  text-align: center;
+  padding-top: 15%; }
 
 h1 {
   font-family: "Alegreya", serif;
   line-height: 1.15;
   color: #FDFFFC;
-  font-size: 6rem; }
+  font-size: 4rem; }
 
-.questions .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+h3 {
+  font-family: "B612", sans-serif;
+  font-size: 1.75rem;
+  margin-top: 10%;
+  margin-bottom: 7%; }
+
+div.puppy {
+  width: 50vw;
+  padding-top: 5%;
+  margin: 0 auto; }
+  div.puppy img {
+    max-width: 100%;
+    width: 100%; }
+
+p {
+  font-size: 1.5rem; }
+
+section.questions {
+  max-width: 100%;
+  padding-top: 2%; }
 
 section.results {
   background: #FC4C69; }
+
+span.result {
+  color: #011627; }
 
 .show {
   display: block; }
@@ -199,15 +220,36 @@ section.results {
 form {
   background: #FDFFFC;
   color: #011627;
-  width: 60vw; }
+  max-width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  -webkit-box-shadow: -4px 4px 5px 0px #011627;
+  -moz-box-shadow: -4px 4px 5px 0px #011627;
+  box-shadow: -4px 4px 5px 0px #011627; }
 
 fieldset label {
   font-size: 1.2rem; }
+
+fieldset.optimist, fieldset.dramatic {
+  border: none; }
+
+fieldset.outdoorsy {
+  border-top: 1px solid #FC4C69;
+  border-bottom: 1px solid #FC4C69;
+  border-right: none;
+  border-left: none; }
 
 .submit {
   margin-top: 50px; }
   .submit input {
     border: none;
-    background: #011627;
-    padding: 20px;
-    border-radius: 2%; }
+    background: #E4572E;
+    padding: 15px;
+    border-radius: 2%;
+    font-size: 1.5rem; }
+
+form p {
+  margin-bottom: 0; }
+
+#optimist-yes, #dramatic-yes, #outdoorsy-yes {
+  margin-right: 20px; }

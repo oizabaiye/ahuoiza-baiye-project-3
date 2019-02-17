@@ -4,30 +4,32 @@
 	<meta charset="UTF-8">
 	<title>How will you go viral this year?</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,800|Source+Sans+Pro:400,600|Cormorant+Garamond:700i|Fira+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,800|Source+Sans+Pro:400,600" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=B612:400,400i|PT+Sans+Narrow" rel="stylesheet">
 	
 	<link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
 <!-- 	Kebab case required -->
+	<div class="wrapper">
 	<header>
-		<div class="wrapper">
+		
 			<h1>Which Viral Meme Are You?</h1>
-			<h3>Everyone loves a good internet meme. This short and totally scientific quiz will tell you which viral internet meme you are.</h3>
+			
+			<div class="puppy">
+				<img src="assets/adorable-animal-baby-230784.jpg" alt="brown puppies confused by the presence of brown puppy toy">
+			</div>
 
-			<i class="fas fa-hand-point-down fa-2x"></i>
-		</div>
+			<h3>Take this quiz to find out</h3>
+			
 	</header>
 	
 	<main>
 	<section class="questions">
-		<div class="wrapper">
 			<form action="">
 				<fieldset class="optimist">
-					<p>Would you consider yourself an optimist?</p>
+					<p>Are you an optimist?</p>
 					<label for="optimist-yes">Oh yes!</label>
 					<input type="radio" name="optimist" id="optimist-yes" value="true" required>
 					<label for="optimist-no">Not really</label>
@@ -37,7 +39,7 @@
 				</fieldset>
 
 				<fieldset class="outdoorsy">
-					<p>Do you enjoy outdoor activities like hiking or marathon running or skiing?</p>
+					<p>Do you enjoy outdoor activities like hiking or skiing?</p>
 					<label for="outdoorsy-yes">Oh yes!</label>
 					<input type="radio" name="outdoorsy" id="outdoorsy-yes" value="true" required>
 					<label for="outdoorsy-no">Not really</label>
@@ -45,41 +47,38 @@
 				</fieldset>
 
 				<fieldset class="dramatic">
-					<p>Are you a drama queen? Is your middle name in fact "Drama"?</p>
+					<p>Are you a drama queen?</p>
 					<label for="dramatic-yes">Oh yes!</label>
 					<input type="radio" name="dramatic" id="dramatic-yes" value="true">
 					<label for="dramatic-no">Not really</label>
 					<input type="radio" name="dramatic" id="dramatic-no" value="false">
-		<!-- put submit button in the last question -->
+	
 					<div class="submit">
-						<input type="submit" value="Click for Answer!">
+						<input type="submit" value="Get Result">
 					</div>
 				</fieldset>
 			</form>	
-		</div>
 	</section>
 	
 	<section class="results">
-		<div class="wrapper">
 			<div class="double-rainbow hidden">
-				<h2>You are Double Rainbow Person</h2>
+				<h2>You got <span class="result">Double Rainbow</span>!</h2>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/MX0D4oZwCsA" frameborder="0"
 					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>The video of you crying at the sight of a natural phenomenom was transformed into a viral remix by the Gregory Brothers. Everyone loves your enthusiasm for the outdoors.</p>
+				<p>You love being out in nature. Your love is so great, it was remixed into this viral video.</p>
 			</div>
 		
 			<div class="snow-fail">
-				<h2>You are Snow Removal Guy</h2>
-				<p>You're a totally normal person. You're just a bit clumsy in new circumstances. Don't be afraid of the shovel.</p>
+				<h2>You got <span class="result">Snow Fail</span>!</h2>
+				<p>You're a totally normal person. You're just a tad bit clumsy in new circumstances. Careful there.</p>
 				<!-- video here -->
 			</div>
 
 			<div class="leave-britney">
-				<h2>You are Chris Crocker, aka Leave Britney Alone!</h2>
-				<p>Like the subject of this mesmerizing video, you have A LOT of feelings. Everything will be alright <span><i class="far fa-frown"></i></span> </p>
+				<h2>You got <span class="result">Leave Britney Alone</span>!</h2>
+				<p>Like the subject of this mesmerizing meme, you have A LOT of feelings. Take it easy, okay?</p>
 				<!-- video here -->
 			</div>
-		</div>
 
 		<!-- if you want to allow them to retake the quiz, add an anchor take that reloads the page -->
 	</section>
@@ -88,6 +87,7 @@
 	<footer>
 
 	</footer>
+	</div>
 
 	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
 

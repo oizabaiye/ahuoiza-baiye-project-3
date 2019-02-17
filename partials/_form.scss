@@ -1,11 +1,27 @@
 form {
     background: $text-color;
     color: $accent-two;
-    width: 60vw;
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    -webkit-box-shadow: -4px 4px 5px 0px $accent-two;
+    -moz-box-shadow: -4px 4px 5px 0px $accent-two;
+    box-shadow: -4px 4px 5px 0px $accent-two;
 }
 
 fieldset label {
     font-size: 1.2rem;
+}
+
+fieldset.optimist, fieldset.dramatic {
+    border: none;
+}
+
+fieldset.outdoorsy {
+    border-top: 1px solid $accent-one;
+    border-bottom: 1px solid $accent-one;
+    border-right: none;
+    border-left: none;
 }
 
 .submit {
@@ -13,8 +29,17 @@ fieldset label {
 
     input {
         border: none;
-        background: $accent-two;
-        padding: 20px;
+        background: $main-color;
+        padding: 15px;
         border-radius: 2%;
+        font-size: 1.5rem;
     }
+}
+
+form p {
+    margin-bottom: 0;
+}
+
+#optimist-yes, #dramatic-yes, #outdoorsy-yes {
+    margin-right: 20px;
 }

@@ -5,25 +5,21 @@ html {
 body {
     background: #E4572E;
     color: $text-color;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-family: $body-font;  
     line-height: 1.6;
 }
 
-header {
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    h1, h3 {
-        border: 1px solid orangered;
-    }
-
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    margin: 0 auto;
 }
+
+
 
 /* 
 -think of warm colours vs cool
@@ -35,35 +31,55 @@ form - change color to orange
 */
 
 section {
-    border: 1px solid orangered;
+    border: 1px solid black;
 }
 
-.wrapper {
-    width: 960px;
-    margin: 0 auto;
-
+header {
+    text-align: center;
+    padding-top: 15%;
 }
 
 h1 {
     font-family: $header-font; 
     line-height: 1.15;
     color: $text-color;
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
-// h3 {
-//     font-family: 2.5rem;
-// }
-
-.questions .wrapper {
-    display: flex;
-    justify-content: center;
+h3 {
+    font-family: $subheader-font;
+    font-size: 1.75rem;
+    margin-top: 10%;
+    margin-bottom: 7%;
 }
 
+div.puppy {
+    width: 50vw;
+    padding-top: 5%;
+    margin: 0 auto;
+
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+p {
+    font-size: 1.5rem;
+}
+ 
+section.questions {
+    max-width: 100%;
+    padding-top: 2%;
+}
 section.results {
     background: $accent-one;
 }
 
+span.result {
+//styling for result word
+    color: $accent-two;
+}
 
 
 // .hidden {
