@@ -22,8 +22,8 @@ fieldset.optimist, fieldset.dramatic {
 }
 
 fieldset.outdoorsy {
-    border-top: 1px solid $accent-one;
-    border-bottom: 1px solid $accent-one;
+    border-top: 2px solid $accent-one;
+    border-bottom: 2px solid $accent-one;
     border-right: none;
     border-left: none;
 }
@@ -38,7 +38,7 @@ fieldset.outdoorsy {
 
     input {
         border: none;
-        background: $accent-two;
+        background: $accent-one;
         padding: 11px;
         width: 200px;
         border-radius: 2%;
@@ -48,12 +48,13 @@ fieldset.outdoorsy {
         -webkit-box-shadow: 3px 7px 35px -6px $accent-two;
         -moz-box-shadow: 3px 7px 35px -6px $accent-two;
         box-shadow: 3px 7px 35px -6px $accent-two;
-        transition: width 1s, box-shadow 1s;
+        transition: width 0.5s, box-shadow 1s, background 0.5s;
     }
 
     input:hover {
         width: 250px;
         box-shadow: none;
+        background: $accent-two;
     }
 }
 

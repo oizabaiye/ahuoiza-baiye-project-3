@@ -42,7 +42,7 @@ h1 {
     line-height: 1.15;
     color: $text-color;
     font-size: 5rem;
-    text-shadow:3px 2px 0px #08415C;
+    text-shadow:4px 2px 2px $accent-two;
 }
 
 h3 {
@@ -50,7 +50,7 @@ h3 {
     font-size: 2.5rem;
     margin-top: 10%;
     margin-bottom: 7%;
-    text-shadow:1px 1px 0px $accent-two;
+    text-shadow:2px 1px 0px $accent-two;
 }
 
 p {
@@ -60,7 +60,7 @@ p {
 section.questions {
     max-width: 100%;
     padding-top: 2%;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
 }
 // section.results {
 //     background: $main-color;
@@ -86,13 +86,12 @@ footer {
     width: 100%;
 
     p {
-        font-size: 1rem;
-        text-shadow:1px 1px 0px $accent-two;
+        font-size: 1.2rem;
+
     }
     .fas {
-        color: #3D2F87;
+        color: $accent-one;
         font-size: 1.2rem;
-        text-shadow: none;
     }
 }
 
