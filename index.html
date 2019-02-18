@@ -6,7 +6,10 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,800|Source+Sans+Pro:400,600" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css?family=B612:400,400i|PT+Sans+Narrow" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kalam:300,400" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	
 	<link href="styles/style.css" rel="stylesheet">
 </head>
@@ -14,15 +17,8 @@
 <!-- 	Kebab case required -->
 	<div class="wrapper">
 	<header>
-		
-			<h1>Which Viral Meme Are You?</h1>
-			
-			<div class="puppy">
-				<img src="assets/adorable-animal-baby-230784.jpg" alt="brown puppies confused by the presence of brown puppy toy">
-			</div>
-
-			<h3>Take this quiz to find out</h3>
-			
+		<h1>Which Viral Meme Are You?</h1>
+		<h3>Take the quiz below!</h3>
 	</header>
 	
 	<main>
@@ -60,37 +56,41 @@
 			</form>	
 	</section>
 	
-	<section class="results">
-			<div class="double-rainbow hidden">
-				<h2>You got <span class="result">Double Rainbow</span>!</h2>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/MX0D4oZwCsA" frameborder="0"
-					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>You love being out in nature. Your love is so great, it was remixed into this viral video.</p>
-			</div>
+		<div class="double-rainbow hidden">
+			<h2>You got <span class="result">Double Rainbow</span>!</h2>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/MX0D4oZwCsA" frameborder="0"
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p>You love being out in nature. Your love is so great, it was remixed into this viral video by the Gregory Brothers.</p>
+		</div>
 		
-			<div class="snow-fail">
-				<h2>You got <span class="result">Snow Fail</span>!</h2>
-				<p>You're a totally normal person. You're just a tad bit clumsy in new circumstances. Careful there.</p>
-				<!-- video here -->
-			</div>
+		<div class="snow-fail hidden">
+			<h2>You got <span class="result">Snow Fail</span>!</h2>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/hh5XPk_RGBA" frameborder="0"
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			<p>You're a totally normal person. You just get overwhelmed sometimes in new circumstances.</p>
+			<!-- video here -->
+		</div>
 
-			<div class="leave-britney">
-				<h2>You got <span class="result">Leave Britney Alone</span>!</h2>
-				<p>Like the subject of this mesmerizing meme, you have A LOT of feelings. Take it easy, okay?</p>
-				<!-- video here -->
-			</div>
+		<div class="leave-britney hidden">
+			<h2>You got <span class="result">Leave Britney Alone</span>!</h2>
+			<p>Like the subject of this mesmerizing meme, you have a lot of feelings. We love you tho. PLEASE.</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/3YaRvbQSjrk" frameborder="0"
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 
 		<!-- if you want to allow them to retake the quiz, add an anchor take that reloads the page -->
-	</section>
 	</main>
 
 	<footer>
-
+		<p>code by Oiza <i class="fas fa-hand-holding-heart fa-sm"></i>
+</p>
 	</footer>
 	</div>
 
 	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
 
 	<script src="script.js"></script>
+
 </body>
 </html>

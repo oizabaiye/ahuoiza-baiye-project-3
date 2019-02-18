@@ -9,24 +9,30 @@ $(document).ready(function(){
 		let outdoorsyAnswer = $('input[name="outdoorsy"]:checked').val();
 		let dramaticAnswer = $('input[name="dramatic"]:checked').val();
 
-		if ((optimistAnswer === 'true') && (outdoorsyAnswer === 'true') && (dramaticAnswer === 'false')){
-			console.log('You are double rainbow!');
+		if ((optimistAnswer === 'true') && (outdoorsyAnswer === 'true') && (dramaticAnswer === 'true')){
+			$(".double-rainbow").removeClass("hidden").addClass("show");
 		} else if ((optimistAnswer === 'true') && (outdoorsyAnswer === 'true') && (dramaticAnswer === 'false')){
-			console.log('You are double rainbow!');
+			$(".double-rainbow").removeClass("hidden").addClass("show");
 		} else if ((optimistAnswer === 'true') && (outdoorsyAnswer === 'false') && (dramaticAnswer === 'true')){
-			console.log('You are leave britney alone!');
+			$(".leave-britney").removeClass("hidden").addClass("show");
 		} else if ((optimistAnswer === 'true') && (outdoorsyAnswer === 'false') && (dramaticAnswer === 'false')){
-			console.log('You are snow fail!');
+			$(".snow-fail").removeClass("hidden").addClass("show");
 		} else if ((optimistAnswer === 'false') && (outdoorsyAnswer === 'true') && (dramaticAnswer === 'true')){
-			console.log('You are double rainbow!');
+			$(".double-rainbow").removeClass("hidden").addClass("show");
 		} else if ((optimistAnswer === 'false') && (outdoorsyAnswer === 'true') && (dramaticAnswer === 'false')){
-			console.log('You are snow fail!');		
+			$(".snow-fail").removeClass("hidden").addClass("show");		
 		} else if ((optimistAnswer === 'false') && (outdoorsyAnswer === 'false') && (dramaticAnswer === 'true')){
-			console.log('You are leave britney alone!');
+			$(".leave-britney").removeClass("hidden").addClass("show");
 		} else if ((optimistAnswer === 'false') && (outdoorsyAnswer === 'false') && (dramaticAnswer === 'false')){
-			console.log('You are Snow Fail!');
-		} else if ((optimistAnswer === 'true') && (outdoorsyAnswer === 'true') && (dramaticAnswer === 'true')){
-			console.log('You are double rainbow!');
-		}
+			$(".snow-fail").removeClass("hidden").addClass("show");
+		} 
 	});
 });
+
+/* 
+normal state - each div is on display: none. 
+there is a class called .show{display: block}
+
+
+
+*/

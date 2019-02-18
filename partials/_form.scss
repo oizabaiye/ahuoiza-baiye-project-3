@@ -7,10 +7,14 @@ form {
     -webkit-box-shadow: -4px 4px 5px 0px $accent-two;
     -moz-box-shadow: -4px 4px 5px 0px $accent-two;
     box-shadow: -4px 4px 5px 0px $accent-two;
+    font-family: $body-font;
+    text-align: center;
 }
 
+
+
 fieldset label {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 fieldset.optimist, fieldset.dramatic {
@@ -26,18 +30,36 @@ fieldset.outdoorsy {
 
 .submit {
     margin-top: 50px;
+    width: 100%;
+    transition: width 2s, box-shadow 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
     input {
         border: none;
-        background: $main-color;
-        padding: 15px;
+        background: $accent-two;
+        padding: 11px;
+        width: 200px;
         border-radius: 2%;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
+        color: $text-color;
+        font-family: 'Kalam', cursive;
+        -webkit-box-shadow: 3px 7px 35px -6px $accent-two;
+        -moz-box-shadow: 3px 7px 35px -6px $accent-two;
+        box-shadow: 3px 7px 35px -6px $accent-two;
+        transition: width 1s, box-shadow 1s;
+    }
+
+    input:hover {
+        width: 250px;
+        box-shadow: none;
     }
 }
 
 form p {
     margin-bottom: 0;
+    margin-top: 10px;
 }
 
 #optimist-yes, #dramatic-yes, #outdoorsy-yes {
