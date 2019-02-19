@@ -52,20 +52,16 @@ section.questions {
 }
 
 section.results {
-    color: $accent-two;
-
-    div.result {
+    h2.result {
+        font-size: 2.2rem;
+        text-align: center;
         color: $text-color;
+    }
 
-        h2 {
-            font-size: 2.2rem;
-            text-align: center;
-        }
-
-        p {
-            font-size: 1.7rem;
-            text-align: center;
-        }
+    p.text {
+        font-size: 1.7rem;
+        text-align: center;
+        color: $text-color;
     }
 
     .responsive {

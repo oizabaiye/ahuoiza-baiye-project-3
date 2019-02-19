@@ -9,6 +9,10 @@
         }
     }
 
+    footer {
+        margin-top: 10%;
+    }
+
     footer p {
         font-size: 1rem;
     }
@@ -24,6 +28,7 @@
     }
 }
 
+
 @media (max-width: 960px) {
     h1 {
         font-size: 3.5rem;
@@ -31,6 +36,7 @@
 
     h3 {
         font-size: 2rem;
+        margin-top: 4%;
     }
 
     section.questions .wrapper {
@@ -45,30 +51,161 @@
         label {
             font-size: 1.1rem;
         }
-    
     }
 
     #submit-btn {
         font-size: 1.3rem;
     }
     
-    .results .wrapper div {
-        h2 {
-            font-size: 1.75rem;
+    section.results {
+        h2.result {
+            font-size: 1.7rem;
         }
 
-        p {
-            font-size: 1.3rem;
+        p.text {
+            font-size: 1.5rem;
         }
     }     
 }
 
-@media (max-width: 760px) {
+@media (max-width: 810px) {
     h1 {
-        font-size: 3.2rem;
+        font-size: 2.7rem;
     }
 
     h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 660px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+   section.questions .wrapper {
+        width: 80vw;
+    }
+
+    form {
+        padding-left: 3%;
+        padding-right: 3%; 
+    }
+
+    section.results .wrapper {
+        h2.result {
+            font-size: 1.5rem;
+        }
+
+        p.text {
+            font-size: 1.2rem;
+            margin-top: 50px;
+        }
+    } 
+}
+
+@media (max-width: 560px) {
+    header .wrapper {
+        width: 80vw;
+    }
+
+    h1 {
         font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        text-shadow: none;
+    }    
+
+    fieldset {
+        p {
+            font-size: 1.25rem;
+            text-align: left;
+        }
+
+        label {
+            font-size: 1rem;
+            text-align: left;
+        }
+    }
+
+    section.questions .wrapper {
+        width: 85vw;
+    }
+
+    section.results .wrapper {
+        h2.result {
+            font-size: 1.5rem;
+        }
+
+        p.text {
+            font-size: 1.1rem;
+            margin-top: 40px;
+        }
+    } 
+}
+
+@media (max-width: 475px) {
+    section.questions .wrapper {
+        width: 90vw;
+    }
+
+    form {
+        padding-left: 0;
+        padding-right: 0;
+        -webkit-box-shadow: -5px 8px 0px 0px rgba(1,22,39,0.6);
+        -moz-box-shadow: -5px 8px 0px 0px rgba(1,22,39,0.6);
+        box-shadow: -5px 8px 0px 0px rgba(1,22,39,0.6);
+    }
+
+    #optimist-yes, #dramatic-yes, #outdoorsy-yes {
+        margin-right: 10px;
+    }
+
+    fieldset {
+        p {
+            font-size: 1.1rem;
+            text-align: left;
+        }
+
+        label {
+            font-size: 0.9rem;
+            text-align: left;
+        }
+    }
+
+    section.results .wrapper {
+        h2.result {
+            font-size: 1.3rem;
+            text-align: left;
+        }
+
+        p.text {
+            font-size: 0.9rem;
+            margin-top: 40px;
+            text-align: left;
+        }
+    } 
+}
+
+@media (max-width: 400px) {
+    section.questions .wrapper {
+        width: 95vw;
+    }
+
+    #optimist-yes, #dramatic-yes, #outdoorsy-yes {
+        margin-right: 4px;
+    }
+
+    fieldset {
+        padding-right: 4px;
+        padding-left: 10px;
+    }
+
+    form .submit input:hover {
+        width: 260px;
+        box-shadow: none;
+        background: #8D99AE;
     }
 }
