@@ -1,0 +1,74 @@
+@media (max-width: 1180px) {
+    h1 {
+        font-size: 4.25rem;
+    } 
+
+    fieldset {
+        label {
+            font-size: 1.3rem;
+        }
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1060px) {
+    h3 {
+        font-size: 2.3rem;
+    }
+
+    fieldset p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 960px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    section.questions .wrapper {
+        width: 70vw;
+    }
+
+    fieldset {
+        p {
+            font-size: 1.4rem;
+        }
+
+        label {
+            font-size: 1.1rem;
+        }
+    
+    }
+
+    #submit-btn {
+        font-size: 1.3rem;
+    }
+    
+    .results .wrapper div {
+        h2 {
+            font-size: 1.75rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+    }     
+}
+
+@media (max-width: 760px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+}

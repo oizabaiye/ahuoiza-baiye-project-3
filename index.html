@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>How will you go viral this year?</title>
+	<title>Which viral internet meme are you?</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,800|Source+Sans+Pro:400,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,800" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Kalam:300,400" rel="stylesheet">
 
@@ -14,15 +14,17 @@
 	<link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
-<!-- 	Kebab case required -->
-	<div class="wrapper">
+
 	<header>
-		<h1>Which Viral Meme Are You?</h1>
-		<h3>Take the quiz below!</h3>
+		<div class="wrapper">
+			<h1>Which Viral Meme Are You?</h1>
+			<h3>Take the quiz and find out!</h3>
+		</div>
 	</header>
 	
 	<main>
 	<section class="questions">
+		<div class="wrapper">
 			<form action="">
 				<fieldset class="optimist">
 					<p>Are you an optimist?</p>
@@ -30,8 +32,6 @@
 					<input type="radio" name="optimist" id="optimist-yes" value="true" required>
 					<label for="optimist-no">Not really</label>
 					<input type="radio" name="optimist" id="optimist-no" value="false">
-					<!-- label must match id -->
-					<!-- name should be same for different options for the same question -->
 				</fieldset>
 
 				<fieldset class="outdoorsy">
@@ -50,43 +50,50 @@
 					<input type="radio" name="dramatic" id="dramatic-no" value="false">
 	
 					<div class="submit">
-						<input type="submit" value="Get Result">
+						<input type="submit" value="Get Result" id="submit-btn">
 					</div>
 				</fieldset>
-			</form>	
+			</form>
+		</div>
 	</section>
 	
-		<div class="double-rainbow hidden">
-			<h2>You got <span class="result">Double Rainbow</span>!</h2>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/MX0D4oZwCsA" frameborder="0"
-				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<p>You love being out in nature. Your love is so great, it was remixed into this viral video by the Gregory Brothers.</p>
-		</div>
+	<section class="results">
+		<div class="wrapper">
+			<div class="double-rainbow hidden result">
+				<h2>You got Double Rainbow!</h2>
+				<div class="responsive">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/MX0D4oZwCsA" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>	
+				<p>You love being out in nature. Your love is so great, it was remixed into this viral video by the Gregory Brothers.</p>
+			</div>
 		
-		<div class="snow-fail hidden">
-			<h2>You got <span class="result">Snow Fail</span>!</h2>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/hh5XPk_RGBA" frameborder="0"
-				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			
-			<p>You're a totally normal person. You just get overwhelmed sometimes in new circumstances.</p>
-			<!-- video here -->
-		</div>
+			<div class="snow-fail hidden result">
+				<h2>You got Snow Fail!</h2>
+				<div class="responsive">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/hh5XPk_RGBA" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<p>You're a totally normal person. You just get overwhelmed sometimes in new circumstances. Oh dear.</p>
+			</div>
 
-		<div class="leave-britney hidden">
-			<h2>You got <span class="result">Leave Britney Alone</span>!</h2>
-			<p>Like the subject of this mesmerizing meme, you have a lot of feelings. We love you tho. PLEASE.</p>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/3YaRvbQSjrk" frameborder="0"
-				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="leave-britney hidden result">
+				<h2>Leave Britney Alone!</h2>
+				<p>Like the subject of this mesmerizing video, you have a lot of feelings, and maybe a little bit of resentment? We love you tho. <em>PLEASE</em>.</p>
+				<div class="responsive">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/3YaRvbQSjrk" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				
+			</div>
 		</div>
-
-		<!-- if you want to allow them to retake the quiz, add an anchor take that reloads the page -->
+		</section>
+		
 	</main>
 
 	<footer>
-		<p>code by oiza <i class="fas fa-hand-holding-heart fa-sm"></i>
-</p>
+		<p>code by oiza <i class="fas fa-hand-holding-heart fa-sm"></i></p>
 	</footer>
-	</div>
 
 	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
 

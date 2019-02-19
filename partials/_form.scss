@@ -1,20 +1,29 @@
 form {
-    background: $text-color;
-    color: $accent-two;
+    background: $accent-two;
+    color: $text-color;
     max-width: 100%;
     padding-left: 5%;
-    padding-right: 5%;
-    -webkit-box-shadow: -4px 4px 5px 0px $accent-two;
-    -moz-box-shadow: -4px 4px 5px 0px $accent-two;
-    box-shadow: -4px 4px 5px 0px $accent-two;
+    padding-right: 5%; 
+    margin-bottom: 10%;
+    -webkit-box-shadow: -9px 13px 0px 0px rgba(1,22,39,0.9);
+    -moz-box-shadow: -9px 13px 0px 0px rgba(1,22,39,0.9);
+    box-shadow: -9px 13px 0px 0px rgba(1,22,39,0.9);
     font-family: $body-font;
     text-align: center;
+
+    p { 
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
 }
 
 
+fieldset {
+    padding-top: 7%;
 
-fieldset label {
-    font-size: 1.5rem;
+    label {
+        font-size: 1.5rem;
+    }
 }
 
 fieldset.optimist, fieldset.dramatic {
@@ -40,27 +49,22 @@ fieldset.outdoorsy {
         border: none;
         background: $accent-one;
         padding: 11px;
-        width: 200px;
+        width: 240px;
         border-radius: 2%;
         font-size: 1.75rem;
         color: $text-color;
-        font-family: 'Kalam', cursive;
-        -webkit-box-shadow: 3px 7px 35px -6px $accent-two;
-        -moz-box-shadow: 3px 7px 35px -6px $accent-two;
-        box-shadow: 3px 7px 35px -6px $accent-two;
+        font-family: $body-font;
+        -webkit-box-shadow: 3px 7px 35px -6px $text-color;
+        -moz-box-shadow: 3px 7px 35px -6px $text-color;
+        box-shadow: 3px 7px 35px -6px $text-color;
         transition: width 0.5s, box-shadow 1s, background 0.5s;
     }
 
     input:hover {
-        width: 250px;
+        width: 275px;
         box-shadow: none;
-        background: $accent-two;
+        background: #8D99AE;
     }
-}
-
-form p {
-    margin-bottom: 0;
-    margin-top: 10px;
 }
 
 #optimist-yes, #dramatic-yes, #outdoorsy-yes {
