@@ -4,28 +4,38 @@
 	<meta charset="UTF-8">
 	<title>Which viral internet meme are you?</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,800" rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/css?family=Kalam:300,400" rel="stylesheet">
-
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	
-	<link href="styles/style.css" rel="stylesheet">
-</head>
-<body>
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
+	
+  <link href="https://fonts.googleapis.com/css?family=Amaranth:400,400i|IM+Fell+Double+Pica:400,400i|Puritan" rel="stylesheet">
 
-	<header>
-		<div class="wrapper">
-			<h1>Which Viral Meme Are You?</h1>
-			<h3>Take the quiz and find out!</h3>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-purple yellow f4 font-amaranth border-box"></body>
+
+	<header class="font-im dt w-100">
+		<div class="wrapper dtc tc v-md">
+			<h1 class="f-headline">Which Viral Meme Are You?</h1>
+
+      <div class="w-100 flex justify-center">
+        <div class="w-50 h-50-ns">
+					<img src="assets/junior.gif" class="mw-100 h-100" alt="animation of 'Junior' from TV show 'Blackish' shaking his head no">
+        </div>
+        <div class="w-50 h-50-ns">
+					<img src="assets/cat-typing.gif" class="mw-100 h-100" alt="strange animation loop of a cat typing frantically at a 90s desktop computer">
+        </div>
+			</div>
+						
+			<h3 class="f1">Take the quiz and find out!</h3>
 		</div>
 	</header>
 	
 	<main>
 	<section class="questions">
-		<div class="wrapper">
-			<form action="">
+		<div class="wrapper tc">
+			<form action="" class="tc">
 				<fieldset class="optimist">
 					<p>Are you an optimist?</p>
 					<label for="optimist-yes">Oh yes!</label>
@@ -58,7 +68,7 @@
 	</section>
 	
 	<section class="results">
-		<div class="wrapper">
+		<div class="wrapper tc">
 			<div class="double-rainbow hidden">
 				<h2 class="result">You got Double Rainbow!</h2>
 				<div class="responsive">

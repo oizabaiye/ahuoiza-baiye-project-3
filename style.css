@@ -1,0 +1,56 @@
+
+.w-100 {
+  width: 100%;
+}
+
+
+
+/* fonts */
+/* font-family: 'IM Fell Double Pica', serif;
+font-family: 'Amaranth', sans-serif;
+font-family: 'Puritan', sans-serif; */
+
+.font-im {
+  font-family: 'IM Fell Double Pica', serif;  
+}
+
+.font-puritan {
+  font-family: 'Puritan', sans-serif;
+}
+
+.font-amaranth {
+  font-family: 'Amaranth', sans-serif;  
+}
+
+.f4 { 
+  font-size: 1.25rem; 
+}
+
+.dt {
+  display: table;
+}
+
+div.w-50 {
+  border: 2px solid red;
+}
+
+iframe {
+  border: 2px solid greenyellow;
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .f2-m {
+      font-size: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .ph4-l {
+      padding-left: 2rem;
+      padding-right: 2rem;
+  }
+
+  .f-subheadline-l {
+      font-size: 5rem;
+  }
+}
