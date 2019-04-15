@@ -13,10 +13,10 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-purple yellow font-cursive f5 f3-ns f1-large border-box"></body>
+<body class="bg-purple yellow font-cursive border-box"></body>
 
 	<header class="font-serif dt w-100 v-mid">
-		<div class="wrapper dtc tc v-md pa2">
+		<div class="dtc tc v-md pa2">
 			<h1 class="f1 f-subheadline-ns f-headline-l pa2 pa4-ns pa5-l">Which Viral Meme Are You?</h1>
 
       <div class="w-100 flex flex-column flex-row-ns items-center justify-center-ns">
@@ -28,75 +28,74 @@
         </div>
 			</div>
 						
-			<h3 class="f3 f1-ns f1 mv4">Take the quiz and find out!</h3>
+			<h3 class="f3 f1-ns f1 mv4 pa2 pa4-ns pa5-l">Take the quiz and find out!</h3>
 
-			<div class="container h3 w-3 flex justify-center">
-				<i class="fa fa-arrow-down f1"></i>
-				<span class="pulse"></span>
+			<div class="ma3 h3 w-3 flex justify-center relative">
+				<i class="absolute fa fa-arrow-down f2"></i>
 			</div>
 		</div>
 	</header>
 	
 	<main>
 	<section class="questions">
-		<div class="wrapper tc">
-			<form action="" class="tc">
-				<fieldset class="optimist">
+		<div class="questions-wrapper tc w-70-ns w-50-l lh-copy">
+			<form action="" class="tc bg-yellow w-100 shadow-4 f5 f3-ns">
+				<fieldset class="optimist b--none w-100 pa3 mb3-ns">
 					<p>Are you an optimist?</p>
 					<label for="optimist-yes">Oh yes!</label>
-					<input type="radio" name="optimist" id="optimist-yes" value="true" required>
+					<input type="radio" class="mr3" name="optimist" id="optimist-yes" value="true" required>
 					<label for="optimist-no">Not really</label>
 					<input type="radio" name="optimist" id="optimist-no" value="false">
 				</fieldset>
 
-				<fieldset class="outdoorsy">
+				<fieldset class="outdoorsy w-100 br-0 bl-0 pa4-m mb3-ns">
 					<p>Do you enjoy outdoor activities like hiking or skiing?</p>
 					<label for="outdoorsy-yes">Oh yes!</label>
-					<input type="radio" name="outdoorsy" id="outdoorsy-yes" value="true" required>
+					<input type="radio" class="mr3"  name="outdoorsy" id="outdoorsy-yes" value="true" required>
 					<label for="outdoorsy-no">Not really</label>
 					<input type="radio" name="outdoorsy" id="outdoorsy-no" value="false">
 				</fieldset>
 
-				<fieldset class="dramatic">
+				<fieldset class="dramatic b--none w-100 pa3 mb3-ns">
 					<p>Are you a drama queen?</p>
 					<label for="dramatic-yes">Oh yes!</label>
-					<input type="radio" name="dramatic" id="dramatic-yes" value="true">
+					<input type="radio" class="mr3"  name="dramatic" id="dramatic-yes" value="true">
 					<label for="dramatic-no">Not really</label>
 					<input type="radio" name="dramatic" id="dramatic-no" value="false">
 	
-					<div class="submit">
-						<input type="submit" value="Get Result" id="submit-btn">
+					<div class="submit pa1 mt4">
+						<input type="submit" value="Get Result" id="submit-btn" class="font-serif f5 f4-ns dim bw0 ph3 pv2 mb2 bg-purple yellow">
 					</div>
 				</fieldset>
 			</form>
 		</div>
 	</section>
 	
-	<section class="results">
-		<div class="wrapper tc">
-			<div class="double-rainbow hidden">
-				<h2 class="result">You got Double Rainbow!</h2>
-				<div class="responsive">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/MX0D4oZwCsA" frameborder="0"
+	<section class="results mt5">
+		<div class="wrapper tc pa3">
+			<div class="double-rainbow hidden pa4">
+				<h2 class="result pa1 pa3-m mb4 f3 f2-ns">You got Double Rainbow!</h2>
+				<div>
+					<iframe class=" w-90 vw-70-ns mw6 h5 vh-50-ns" src="https://www.youtube.com/embed/MX0D4oZwCsA" frameborder="0"
 						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>	
-				<p class="text">You love being out in nature. Your love is so great, it was remixed into this viral video by the Gregory Brothers.</p>
+				<p class="f4 f3-ns mt4 pa2 pa4-l lh-copy">You love being out in nature. Your love is so great, it was remixed into this viral video by the Gregory Brothers.</p>
 			</div>
 		
-			<div class="snow-fail hidden">
-				<h2 class="result">You got Snow Fail!</h2>
-				<div class="responsive">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/hh5XPk_RGBA" frameborder="0"
+			<div class="snow-fail hidden pa4">
+				<h2 class="result pa1 pa3-m mb4 f3 f2-ns">You got Snow Fail!</h2>
+				<div>
+					<iframe class="w-90 vw-70-ns mw6 h5 vh-50-ns" src="https://www.youtube.com/embed/hh5XPk_RGBA" frameborder="0"
 						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
-				<p class="text">You're a totally normal person. You just get overwhelmed sometimes in new circumstances. Oh dear.</p>
+				<p class="f4 f3-ns mt4 pa2 pa4-l lh-copy">You're a totally normal person. You just get overwhelmed sometimes in new circumstances. Oh dear.</p>
 			</div>
 
-			<div class="leave-britney hidden">
-				<h2 class="result">Leave Britney Alone!</h2>
-				<p class="text">Like the subject of this mesmerizing video, you have a lot of feelings, and maybe a little resentment? We love you tho. <em>PLEASE</em>.</p>
-				<div class="responsive">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/3YaRvbQSjrk" frameborder="0"
+			<div class="leave-britney hidden pa4">
+				<h2 class="result pa1 pa3-m mb4 f3 f2-ns">Leave Britney Alone!</h2>
+				<p class="f4 f3-ns mt4 pa2 pa4-l lh-copy">Like the subject of this mesmerizing video, you have a lot of feelings, and maybe a little resentment? We love you tho. <em>PLEASE</em>.</p>
+				<div>
+					<iframe class="w-90 vw-70-ns mw6 h5 vh-50-ns" src="https://www.youtube.com/embed/3YaRvbQSjrk" frameborder="0"
 						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				
@@ -106,8 +105,8 @@
 		
 	</main>
 
-	<footer>
-		<p>code by oiza <i class="fas fa-hand-holding-heart fa-sm"></i></p>
+	<footer class="w-100 pa3 f5 flex h3 tc content-end justify-center mt4">
+		<p class="pa1">code by oiza <i class="fas fa-hand-holding-heart fa-sm"></i></p>
 	</footer>
 
 	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
