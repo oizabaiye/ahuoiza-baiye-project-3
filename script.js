@@ -26,5 +26,11 @@ $(document).ready(function(){
 
 		$('#submit-btn').hide();
 
+		// scroll to results on submit 
+
+		document.querySelector('.results').scrollIntoView({ 
+			behavior: 'smooth' 
+		});
+		event.preventDefault();
 	});
 });
