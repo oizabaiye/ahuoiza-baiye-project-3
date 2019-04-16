@@ -7,6 +7,6 @@ Currently under development:
 - Improvements to accessibility for keyboard-only users
 - ~Redesign of mobile view (particularly the small font size)~
 - ~Apply functional CSS~
-- remove scroll (on submit, skip to results section)
+- ~remove scroll (on submit, skip to results section)~
 - option to retake quiz OR hide questions
 
